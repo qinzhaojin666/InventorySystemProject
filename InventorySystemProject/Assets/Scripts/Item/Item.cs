@@ -64,30 +64,30 @@ public class Item
     /// <returns></returns>
     public virtual string GetToolTipText()
     {
-        return Name;
-        //    string color = "";
-        //    switch (Quality)
-        //    {
-        //        case ItemQuality.Common:
-        //            color = "white";
-        //            break;
-        //        case ItemQuality.Uncommon:
-        //            color = "lime";
-        //            break;
-        //        case ItemQuality.Rare:
-        //            color = "navy";
-        //            break;
-        //        case ItemQuality.Epic:
-        //            color = "magenta";
-        //            break;
-        //        case ItemQuality.Legendary:
-        //            color = "orange";
-        //            break;
-        //        case ItemQuality.Artifact:
-        //            color = "red";
-        //            break;
-        //    }
-        //    string text = string.Format("<color={4}>{0}</color>\n<size=10><color=green>购买价格：{1} 出售价格：{2}</color></size>\n<color=yellow><size=10>{3}</size></color>", Name, BuyPrice, SellPrice, Description, color);
-        //    return text;
+
+        string color = "";
+        switch (Quality)
+        {
+            case ItemQuality.Common:
+                color = "white";
+                break;
+            case ItemQuality.Uncommon:
+                color = "lime";
+                break;
+            case ItemQuality.Rare:
+                color = "navy";
+                break;
+            case ItemQuality.Epic:
+                color = "magenta";
+                break;
+            case ItemQuality.Legendary:
+                color = "orange";
+                break;
+            case ItemQuality.Artifact:
+                color = "red";
+                break;
+        }
+        string text = string.Format("<color={4}>{0}</color>\n<size=10><color=green>购买价格：{1} 出售价格：{2}</color></size>\n<color=yellow><size=10>{3}</size></color>", Name, BuyPrice, SellPrice, Description, color);
+        return text;
     }
 }

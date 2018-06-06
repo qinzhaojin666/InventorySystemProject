@@ -25,24 +25,24 @@ public class Weapon : Item {
     }
 
 
-    //public override string GetToolTipText()
-    //{
-    //    string text = base.GetToolTipText();
+    public override string GetToolTipText()
+    {
+        string text = base.GetToolTipText();
 
-    //    string wpTypeText = "";
+        string wpTypeText = "";
 
-    //    switch (WpType)
-    //    {
-    //        case WeaponType.OffHand:
-    //            wpTypeText = "副手";
-    //            break;
-    //        case WeaponType.MainHand:
-    //            wpTypeText = "主手";
-    //            break;
-    //    }
+        switch (WpType)
+        {
+            case WeaponType.OffHand:
+                wpTypeText = "副手";
+                break;
+            case WeaponType.MainHand:
+                wpTypeText = "主手";
+                break;
+        }
 
-    //    string newText = string.Format("{0}\n\n<color=blue>武器类型：{1}\n攻击力：{2}</color>", text, wpTypeText, Damage);
+        string newText = string.Format("{0}\n\n<color=blue>武器类型：{1}\n攻击力：{2}</color>", text, wpTypeText, Damage);
 
-    //    return newText;
-    //}
+        return newText;
+    }
 }

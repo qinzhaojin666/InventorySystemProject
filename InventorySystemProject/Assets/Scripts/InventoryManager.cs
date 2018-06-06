@@ -93,8 +93,8 @@ public class InventoryManager : MonoBehaviour {
                     int intellect = (int)temp["intellect"].n;
                     int agility = (int)temp["agility"].n;
                     int stamina = (int)temp["stamina"].n;
-                    // Equipment.EquipmentType equipType = (Equipment.EquipmentType)System.Enum.Parse(typeof(Equipment.EquipmentType), temp["equipType"].str);
-                    //item = new Equipment(id, name, type, quality, description, capacity, buyPrice, sellPrice, sprite, strength, intellect, agility, stamina, equipType);
+                    Equipment.EquipmentType equipType = (Equipment.EquipmentType)System.Enum.Parse(typeof(Equipment.EquipmentType), temp["equipType"].str);
+                    item = new Equipment(id, name, type, quality, description, capacity, buyPrice, sellPrice, sprite, strength, intellect, agility, stamina, equipType);
                     break;
                 case Item.ItemType.Weapon:
                     //
